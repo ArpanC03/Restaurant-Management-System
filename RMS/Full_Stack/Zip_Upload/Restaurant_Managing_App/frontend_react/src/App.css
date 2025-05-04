@@ -1,0 +1,101 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+
+
+
+
+.App {
+  text-align: center;
+}
+
+/* Improved Logo Animation */
+.App-logo {
+  height: 35vmin; /* Reduced size for better responsiveness */
+  pointer-events: none;
+  animation: App-logo-spin 10s linear infinite;
+}
+
+/* Adjusted Animation Speed for Better UX */
+@keyframes App-logo-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive Header */
+.App-header {
+  background-color: rgba(40, 44, 52, 0.9); /* Slight transparency */
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(12px + 2vmin);
+  color: white;
+  border-radius: 10px; /* Soft rounding */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark Mode Improvements */
+.App-dark-mode {
+  background-color: #1e1e1e !important;
+  color: #ffffff;
+}
+
+/* Stylish Link Effects */
+.App-link {
+  color: #61dafb;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.App-link:hover {
+  color: #ffd700;
+  transform: scale(1.1);
+}
+
+/* Glassmorphism Effect */
+.glass-container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}

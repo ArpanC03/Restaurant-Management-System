@@ -1,0 +1,65 @@
+/* body {
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(-45deg, #0f2027, #2c5364, #003300, #001a13);
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease-in-out infinite;
+  }
+  
+  @keyframes gradientMove {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+   */
+
+
+
+
+
+   body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex; /* Ensure full screen coverage */
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(-45deg, #0f2027, #2c5364, #003300, #001a13);
+    background-size: 300% 300%;
+    animation: gradientMove 8s ease-in-out infinite;
+}
+
+/* Optimize animation for smoother transitions */
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    body {
+        background-size: 250% 250%;
+        animation: gradientMove 10s ease-in-out infinite;
+    }
+}
+
+/* Add overlay effect for improved contrast */
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3); /* Dark overlay effect */
+    backdrop-filter: blur(5px);
+}
